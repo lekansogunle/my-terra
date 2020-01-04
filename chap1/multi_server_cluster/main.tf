@@ -31,7 +31,7 @@ resource "aws_launch_configuration" "example" {
 }
 
 resource "aws_security_group" "instance" {
-  name = "terraform-example-instance"
+  name = "terraform-lb-example-instance"
 
   ingress {
     from_port   = var.server_port
